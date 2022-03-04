@@ -1,0 +1,66 @@
+* {
+    box-sizing: border-box;
+}
+  
+table {
+    width: 100%;
+}
+  
+td {
+    height: 2em;
+    width: 4em;
+}
+
+#Pr, #Cr, #A, #B, #C, #D, #E, #F, #G, #H, #I, #J, #pA, #pB, #pC, #pD, #pE, #pF, #pG, #pH, #pI, #pJ {
+  background-color: #BFFCC6;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+  
+div {
+    text-align: center; 
+}
+  
+td, th {
+    border: 1px solid #dddddd;
+}
+  
+.column {
+    float: left;
+    padding: 10px;
+    justify-content: center;
+}
+
+.onehalf {
+  width: 50%;
+}
+
+.onethird {
+    width: 33%;
+}
+
+.onefifth {
+    width: 20%;
+}
+
+.threefifth {
+    width: 60%;
+}
+
+.box {
+    border: 1px solid black; 
+    height: 100px;
+    width: 100%;
+}
+
+.centered{
+  position: fixed;
+  top: 50%;
+  left: 48%;
+}
+
+

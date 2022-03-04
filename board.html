@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src = "script.js"> </script>
+    <link rel = "stylesheet" type = "text/css" href = "./board.css"/>
+</head>
+
+<body onload = "initialize ();">
+
+<div class = "row">
+    <div class = "column onethird">
+        <h2> Computer Board </h2>
+        <table id = "computer"> 
+            <tr id = "Cr"> 
+                <td> </td> <td> 1 </td> <td> 2 </td> <td> 3 </td> 
+                <td> 4 </td> <td> 5 </td> <td> 6 </td> <td> 7 </td> 
+                <td> 8 </td> <td> 9 </td> <td> 10 </td>
+            </tr>
+            <tr id = "Cr1"> 
+                <td id = "A"> A </td> 
+                <td id = "A1"> </td><td id = "A2"> </td> <td id = "A3"> </td> <td id = "A4"> </td> 
+                <td id = "A5"> </td> <td id = "A6"> </td> <td id = "A7"> </td> <td id = "A8"> </td> 
+                <td id = "A9"> </td> </td> <td id = "A10"> </td>
+            </tr>
+            <tr id = "Cr2"> 
+                <td id = "B"> B </td> 
+                <td id = "B1"> </td> <td id = "B2"> </td> <td id = "B3"> </td> <td id = "B4"> </td> 
+                <td id = "B5"> </td> <td id = "B6"> </td> <td id = "B7"> </td> <td id = "B8"> </td> 
+                <td id = "B9"> </td> <td id = "B10"> </td> 
+            </tr>
+            <tr id = "Cr3">
+                <td id = "C"> C </td> 
+                <td id = "C1"> </td> <td id = "C2"> </td> <td id = "C3"> </td> <td id = "C4"> </td> 
+                <td id = "C5"> </td> <td id = "C6"> </td> <td id = "C7"> </td> <td id = "C8"> </td> 
+                <td id = "C9"> </td> <td id = "C10"> </td> 
+            </tr>
+            <tr id = "Cr4"> 
+                <td id = "D"> D </td> 
+                <td id = "D1"> </td> <td id = "D2"> </td> <td id = "D3"> </td> <td id = "D4"> </td> 
+                <td id = "D5"> </td> <td id = "D6"> </td> <td id = "D7"> </td> <td id = "D8"> </td> 
+                <td id = "D9"> </td> <td id = "D10"> </td>
+            </tr>
+            <tr id = "Cr5"> 
+                <td id = "E"> E </td> 
+                <td id = "E1"> </td> <td id = "E2"> </td> <td id = "E3"> </td> <td id = "E4"> </td> 
+                <td id = "E5"> </td> <td id = "E6"> </td> <td id = "E7"> </td> <td id = "E8"> </td> 
+                <td id = "E9"> </td> <td id = "E10"> </td>
+            </tr>
+            <tr id = "Cr6"> 
+                <td id = "F"> F </td> 
+                <td id = "F1"> </td> <td id = "F2"> </td> <td id = "F3"> </td> <td id = "F4"> </td> 
+                <td id = "F5"> </td> <td id = "F6"> </td> <td id = "F7"> </td> <td id = "F8"> </td> 
+                <td id = "F9"> </td> <td id = "F10"> </td> 
+            </tr>
+            <tr id = "Cr7"> 
+                <td id = "G"> G </td> 
+                <td id = "G1"> </td> <td id = "G2"> </td> <td id = "G3"> </td> <td id = "G4"> </td> 
+                <td id = "G5"> </td> <td id = "G6"> </td> <td id = "G7"> </td> <td id = "G8"> </td> 
+                <td id = "G9"> </td> <td id = "G10"> </td> 
+            </tr>
+            <tr id = "Cr8"> 
+                <td id = "H"> H </td> 
+                <td id = "H1"> </td> <td id = "H2"> </td> <td id = "H3"> </td> <td id = "H4"> </td> 
+                <td id = "H5"> </td> <td id = "H6"> </td> <td id = "H7"> </td> <td id = "H8"> </td> 
+                <td id = "H9"> </td> <td id = "H10"> </td> 
+            </tr>
+            <tr id = "Cr9"> 
+                <td id = "I"> I </td> 
+                <td id = "I1"> </td> <td id = "I2"> </td> <td id = "I3"> </td> <td id = "I4"> </td> 
+                <td id = "I5"> </td> <td id = "I6"> </td> <td id = "I7"> </td> <td id = "I8"> </td> 
+                <td id = "I9"> </td> <td id = "I10"> </td>
+            </tr>
+            <tr id = "Cr10"> 
+                <td id = "J"> J </td> 
+                <td id = "J1"> </td> <td id = "J2"> </td> <td id = "J3"> </td> <td id = "J4"> </td> 
+                <td id = "J5"> </td> <td id = "J6"> </td> <td id = "J7"> </td> <td id = "J8"> </td> 
+                <td id = "J9"> </td> <td id = "J10"> </td>
+            </tr>
+        </table>
+    </div>
+
+    <div class = "column onethird">
+      <div class = "column onehalf">
+        <h5>CPU INFO</h5>
+        Ships destroyed: 
+        </br>
+        Hits: 
+        </br>
+        Misses: 
+      </div>
+      <div class = "column onehalf">
+        <h5>PLAYER INFO</h5>
+        Ships destroyed: 
+        </br>
+        Hits: 
+        </br>
+        Misses: 
+      </div>
+    </div>
+
+    <div class = "column onethird">
+        <h2> Player Board </h2>
+        <table id = "player"> 
+            <tr id = "Pr"> 
+                <td> </td> <td> 1 </td> <td> 2 </td> <td> 3 </td> 
+                <td> 4 </td> <td> 5 </td> <td> 6 </td> <td> 7 </td> 
+                <td> 8 </td> <td> 9 </td> <td> 10 </td>
+            </tr>
+            <tr id = "Pr1"> 
+                <td id = "pA"> A </td> 
+                <td id = "pA1"> </td> <td id = "pA2"> </td> <td id = "pA3"> </td> <td id = "pA4"> </td> 
+                <td id = "pA5"> </td> <td id = "pA6"> </td> <td id = "pA7"> </td> <td id = "pA8"> </td>
+                <td id = "pA9"> </td> <td id = "pA10"> </td>
+            </tr>
+            <tr id = "Pr2"> 
+                <td id = "pB"> B </td> 
+                <td id = "pB1"> </td> <td id = "pB2"> </td> <td id = "pB3"> </td> <td id = "pB4"> </td>
+                <td id = "pB5"> </td> <td id = "pB6"> </td> <td id = "pB7"> </td> <td id = "pB8"> </td>
+                <td id = "pB9"> </td> <td id = "pB10"> </td> 
+            </tr>
+            <tr id = "Pr3">
+                <td id = "pC"> C </td> 
+                <td id = "pC1"> </td> <td id = "pC2"> </td> <td id = "pC3"> </td> <td id = "pC4"> </td>
+                <td id = "pC5"> </td> <td id = "pC6"> </td> <td id = "pC7"> </td> <td id = "pC8"> </td>
+                <td id = "pC9"> </td> <td id = "pC10"> </td> 
+            </tr>
+            <tr id = "Pr4"> 
+                <td id = "pD"> D </td> 
+                <td id = "pD1"> </td> <td id = "pD2"> </td> <td id = "pD3"> </td> <td id = "pD4"> </td>
+                <td id = "pD5"> </td> <td id = "pD6"> </td> <td id = "pD7"> </td> <td id = "pD8"> </td>
+                <td id = "pD9"> </td> <td id = "pD10"> </td>
+            </tr>
+            <tr id = "Pr5"> 
+                <td id = "pE"> E </td> 
+                <td id = "pE1"> </td> <td id = "pE2"> </td> <td id = "pE3"> </td> <td id = "pE4"> </td>
+                <td id = "pE5"> </td> <td id = "pE6"> </td> <td id = "pE7"> </td> <td id = "pE8"> </td>
+                <td id = "pE9"> </td> <td id = "pE10"> </td>
+            </tr>
+            <tr id = "Pr6"> 
+                <td id = "pF"> F </td> 
+                <td id = "pF1"> </td> <td id = "pF2"> </td> <td id = "pF3"> </td> <td id = "pF4"> </td>
+                <td id = "pF5"> </td> <td id = "pF6"> </td> <td id = "pF7"> </td> <td id = "pF8"> </td>
+                <td id = "pF9"> </td> <td id = "pF10"> </td> 
+            </tr>
+            <tr id = "Pr7"> 
+                <td id = "pG"> G </td> 
+                <td id = "pG1"> </td> <td id = "pG2"> </td> <td id = "pG3"> </td> <td id = "pG4"> </td>
+                <td id = "pG5"> </td> <td id = "pG6"> </td> <td id = "pG7"> </td> <td id = "pG8"> </td>
+                <td id = "pG9"> </td> <td id = "pG10"> </td>
+            </tr>
+            <tr id = "Pr8"> 
+                <td id = "pH"> H </td> 
+                <td id = "pH1"> </td> <td id = "pH2"> </td> <td id = "pH3"> </td> <td id = "pH4"> </td>
+                <td id = "pH5"> </td> <td id = "pH6"> </td> <td id = "pH7"> </td> <td id = "pH8"> </td>
+                <td id = "pH9"> </td> <td id = "pH10"> </td> 
+            </tr>
+            <tr id = "Pr9"> 
+                <td id = "pI"> I </td> 
+                <td id = "pI1"> </td> <td id = "pI2"> </td> <td id = "pI3"> </td> <td id = "pI4"> </td>
+                <td id = "pI5"> </td> <td id = "pI6"> </td> <td id = "pI7"> </td> <td id = "pI8"> </td>
+                <td id = "pI9"> </td> <td id = "pI10"> </td>
+            </tr>
+            <tr id = "Pr10"> 
+                <td id = "pJ"> J </td> 
+                <td id = "pJ1"> </td> <td id = "pJ2"> </td> <td id = "pJ3"> </td> <td id = "pJ4"> </td>
+                <td id = "pJ5"> </td> <td id = "pJ6"> </td> <td id = "pJ7"> </td> <td id = "pJ8"> </td>
+                <td id = "pJ9"> </td> <td id = "pJ10"> </td>
+            </tr>
+        </table>
+    </div>
+</div>
+
+<div class="centered">
+  <div class="">
+      <button onclick = "start ();"> Start </button>
+  </div>
+</div>
+
+<div class="row">
+    <div class = "column onefifth"> </div>
+    <div class = "column threefifth">
+        <div class = "box"></div>
+    </div>
+    <div class = "column onefifth"> </div>
+</div>
+
+</body>
+</html>
